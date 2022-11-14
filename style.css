@@ -46,7 +46,6 @@ font-weight: 500;
 padding: 8px 15px;
 border-radius: 5px;
 transition: 0.2s;
-
 }
 
 .menud li a:hover{
@@ -55,13 +54,14 @@ transition: 0.2s;
     
 }
 
-.menud ul ul{
+/* .menud ul ul{
     display: none;
     margin:0px;
 }
 
-.menud ul li:hover>ul{
+.menud ul li:hover{
     display: block;
+    border: 1px solid red;
 
 }
 
@@ -69,6 +69,31 @@ transition: 0.2s;
     margin-left: 170px;
     top: 0px;
     position: absolute;
+} */
+
+.dropdown-menu{
+  display: none;
+}
+
+.menud li:hover .dropdown-menu{
+    display: block;
+    position: absolute;
+    justify-content: space-around;
+    margin-top: 5px;
+    margin-left: 90px;
+    background-color: rgb(236, 236, 243);
+}
+
+.menud ul li:hover .dropdown-menu ul{
+  display: block;
+  margin: 20px;
+  padding: 10px;
+}
+
+.dropdown-menu li{
+  margin: 10px;
+  padding: 10px;
+  font-size: 2rem;
 }
 
 
